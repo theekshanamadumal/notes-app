@@ -1,0 +1,8 @@
+.link {
+  color: azure;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: crimson;
+}
