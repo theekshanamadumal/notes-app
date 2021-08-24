@@ -8,7 +8,13 @@ router.route("/create").post((req,res)=>{
     const newNote = new Note({title,content});
 
     newNote.save();
+    //alert('new note added');
 });
+
+
+router.route("/notes").get((req,res)=>{
+    Note.find().then(foundNotes=>res.json(foundNotes))
+})
 
 module.exports=router;
 

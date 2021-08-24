@@ -1,7 +1,7 @@
 import{BrowserRouter as Router,Route} from "react-router-dom"
 import Navbar from "./components/Navbar";
 import Home from "./components/home";
-import Note from "./components/notes";
+import Notes from "./components/notes";
 import CreateNote from "./components/createNote";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
    <Navbar/>
 
     <Route path="/" exact><Home/></Route>
-    <Route path="/notes"><Note/></Route>
+    <Route path="/notes"><Notes/></Route>
     <Route path="/create"><CreateNote/></Route>
 
 
